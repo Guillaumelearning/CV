@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes personnels</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <center><h1>Notes personnels pour HTML</h1></center>
+    <h1>Notes personnels pour HTML</h1>
     <article>
         <h2>Balise meta</h2>
             <p>Elle permet d'intégrer des données supplémentaires au document HTML</p>
@@ -24,5 +25,25 @@
         <h2>Introduire des liens</h2>
             <p>Utiliser le tag "a" avec href le plus souvent. Il ne faut surtout pas oublier d'ajouter en les balises "a" du texte ou une image pour avoir la cible du lien</p>
     </article>
+
+    <hr>
+
+    <h1>Notes personnels pour CSS</h1>
+    <article>
+        <h2>Général</h2>
+        <p>Le code CSS peut être intégré directement dans la balsie en question. Utile quand il faut juste changer un élément. <br>
+        Dans le cas où il faut changer plusieurs éléments il est plus judicieux de créer un code CSS à part au niveau de head en le spécifiant et en ajoutant {} dans lesquels on ajoutera le code en question pour changer le style. <br>
+        Ne pas hésiter à se référer à <strong>devdoc.io</strong> pour la documentation
+        </p>
+        <p>Dans le CSS, la hiérachie d'application du code CSS commence par le "inline" (code mis directement dans la balise) puis "internal" (code mis dans head et qui renvoie à des balises) et enfin "external" qui correspond à un fichier externe qui regroupe tout le code CSS appliqué à la page et dont on fait appel avec "link"</p>
+        <p>Syntaxe CSS = selector { property : value; }</p>
+        <p>Le code CSS prend en priorité les tags avec ID ou class par rapport à un tag neutre s'il y a deux code CSS qui renvoie pour la même balise</p>
+        <p>On ne peut avoir qu'une occurence d'un "ID" alors que pour "class" on pourra le placer à plusieurs endroits. On utulisera "ID" pour les éléments qui apparaitront qu'une seule fois et "class" pour les éléments multiples et qu'on veut regrouper pour les modifier tous ensemble</p>
+        <p>On peut ajouter plusieurs "class" à une balise en les mettant l'un après l'autre avec un espace entre. Cela n'est pas possible pour "ID" où la balise ne peut pas avoir qu'un seul "ID".</p>
+    </article>
+
+    <footer>
+        <a href="index.html">Mon CV</a>
+    </footer>
 </body>
 </html>
